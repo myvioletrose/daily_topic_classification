@@ -17,14 +17,11 @@ if(!require(purrr)){install.packages("purrr"); require(purrr)}
 if(!require(rlang)){install.packages("rlang"); require(rlang)}
 
 # Big Query arguments
-projectId <- "media-data-science"
-dataset_staging <- "Jim_Story_Staging"
-dataset_production <- "Jim_Story_Production"
-dataset_audit <- "Jim_Story_Audit"
+source("arguments.R")
 # table_id <- "audit_a"
 
 # email recipients
-recipients <- c("myvioletrose@gmail.com") 
+source("recipients.R")
 
 ####################################
 # email - subjects, bodies
