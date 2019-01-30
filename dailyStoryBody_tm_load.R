@@ -27,14 +27,10 @@ if(!require(SnowballC)){install.packages("SnowballC"); require(SnowballC)}
 
 
 # Big Query arguments
-projectId <- "media-data-science"
-dataset_staging <- "Jim_Story_Staging"
-dataset_production <- "Jim_Story_Production"
-dataset_audit <- "Jim_Story_Audit"
-# table_id <- "audit_a"
+source("arguments.R")
 
 # email recipients
-recipients <- c("myvioletrose@gmail.com") 
+source("recipients.R")
 
 
 #############################################
